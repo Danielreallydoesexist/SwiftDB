@@ -11,6 +11,10 @@ let package = Package(
         .package(
             url: "https://github.com/vapor/vapor.git",
             from: "4.100.0"
+        ),
+        .package(
+            url: "https://github.com/vapor/fluent-kit.git",
+            from: "1.49.0"
         )
     ],
     targets: [
@@ -20,6 +24,10 @@ let package = Package(
                 .product(
                     name: "Vapor",
                     package: "vapor"
+                ),
+                .product(
+                    name: "FluentKit",
+                    package: "fluent-kit"
                 )
             ]
         )
