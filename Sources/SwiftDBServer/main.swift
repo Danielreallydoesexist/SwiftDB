@@ -13,7 +13,7 @@ app.http.server.configuration.port = port
 
 let databasePath =
     Environment.get("DATABASE_PATH")
-    ?? "/tmp/swiftdb/database.json"
+    ?? "/data/database.json"
 
 let store = DBStore(
     filePath: databasePath
